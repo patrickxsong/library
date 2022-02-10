@@ -1,0 +1,90 @@
+.card {
+    height: 250px;
+    width: 170px;
+    border-right: 8px solid lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgb(32 33 36 / 30%);
+    position: relative;
+}
+
+.remove-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    visibility: hidden;
+}
+
+.toggle-button {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    visibility: hidden;
+}
+
+.card:hover .remove-button, 
+.card:hover .toggle-button {
+    visibility: visible;
+}
+
+.card:hover {
+    opacity: 70%;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    font-family: inherit;
+}
+
+.popup {
+    flex-direction: column;
+    position: fixed;
+    width: 300px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -150px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(32 33 36 / 30%);
+    display: none;
+}
+
+.close {
+    align-self: flex-end;
+    background-color: white;
+    border: 1px solid gainsboro;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset div {
+    margin-top: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#error-message {
+    font-style: italic;
+    color: red;
+    font-size: 0.8rem;
+}
